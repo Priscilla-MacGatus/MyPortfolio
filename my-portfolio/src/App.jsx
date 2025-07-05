@@ -27,7 +27,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="content">
       <header>
         <NavBar
           onSelectSection={handleNavClick}
@@ -35,7 +35,7 @@ function App() {
         />
       </header>
       <main className="section-container">{renderSection()}</main>
-    </>
+    </div>
   );
 }
 

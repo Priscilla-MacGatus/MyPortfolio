@@ -15,6 +15,7 @@ nav {
   font-size: 0.9rem;
   z-index: 10;
   box-sizing: border-box;
+  padding-top: 60px;
 }
 
 .left a,
@@ -41,7 +42,6 @@ nav {
   animation: waveShadow 3s ease-in-out infinite;
 }
 
-/* Animate text shadow only, no transform */
 @keyframes waveShadow {
   0% {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4),
@@ -70,16 +70,21 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .waveText {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 768px) {
   .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4a300;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
     flex-direction: column;
     align-items: center;
-    padding: 10px 20px;
+    height: 85px;
+  }
+  .section-container {
+    padding-top: 60px;
   }
 
   .left,
@@ -94,5 +99,9 @@ nav {
   .right a {
     margin-right: 0;
     font-size: 1rem;
+  }
+
+  .waveText {
+    font-size: 1.5rem;
   }
 }

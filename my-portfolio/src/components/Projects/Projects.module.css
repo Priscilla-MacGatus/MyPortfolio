@@ -132,4 +132,9 @@
   .links a {
     font-size: 0.9rem;
   }
+
+  .projects {
+    margin-top: 60px;
+    background-color: #f4a300;
+  }
 }
