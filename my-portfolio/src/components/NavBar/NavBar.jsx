@@ -6,7 +6,7 @@ const NavBar = ({ onSelectSection, currentSection }) => {
     <nav className={styles.nav}>
       <div className={styles.left}>
         <a
-          href="#"
+          href="#hero"
           onClick={() => onSelectSection("hero")}
           className={`${styles.navLink} ${
             currentSection === "hero" ? styles.waveText : ""
@@ -15,7 +15,7 @@ const NavBar = ({ onSelectSection, currentSection }) => {
           HOME
         </a>
         <a
-          href="#"
+          href="#about"
           onClick={() => onSelectSection("about")}
           className={`${styles.navLink} ${
             currentSection === "about" ? styles.waveText : ""
@@ -24,7 +24,7 @@ const NavBar = ({ onSelectSection, currentSection }) => {
           ABOUT
         </a>
         <a
-          href="#"
+          href="#projects"
           onClick={() => onSelectSection("projects")}
           className={`${styles.navLink} ${
             currentSection === "projects" ? styles.waveText : ""
@@ -36,10 +36,10 @@ const NavBar = ({ onSelectSection, currentSection }) => {
 
       <div className={styles.right}>
         <a
-          href="#"
+          href="#skills"
           onClick={() => onSelectSection("skills")}
           className={`${styles.navLink} ${
-            currentSection === "cv" ? styles.waveText : ""
+            currentSection === "skills" ? styles.waveText : ""
           }`}
         >
           SKILLS

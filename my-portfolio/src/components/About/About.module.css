@@ -1,6 +1,6 @@
 .about {
   height: 100vh;
-  background-color: #f4a300; 
+  background-color: #f4a300;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,8 +11,8 @@
 }
 
 .image {
-  width: 600px;
-  height: 600px;
+  width: 400px;
+  height: 400px;
   border-radius: 50%;
   object-fit: contain;
 }
@@ -40,6 +40,8 @@
   .about {
     flex-direction: column;
     text-align: center;
+    margin-top: 3rem;
+    padding: 0 1rem;
   }
 
   .image {

@@ -1,13 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 nav {
   position: absolute;
   top: 20px;
   width: 100%;
+  padding: 0 40px;
   display: flex;
   justify-content: space-around;
-  padding: 0 40px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 0.9rem;
   z-index: 10;
+  box-sizing: border-box;
 }
 
 .left a,
@@ -72,7 +79,7 @@ nav {
   .nav {
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
   }
 
   .left,

@@ -5,29 +5,90 @@ import styles from "./Projects.module.css";
 
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "SmartCV pathfolio",
     description:
-      "A personal portfolio website built with React and styled-components.",
-    tech: ["React", "CSS", "HTML"],
-    link: "#",
-    github: "https://github.com/priscilla/portfolio",
+      "A dynamic, AI-powered portfolio application that helps users generate personalized CV content. Integrates Google Gemini API to suggest tailored resume sections based on user input, with inline editing capabilities for real-time customization. Built with modular React components and deployed using Netlify’s serverless infrastructure for scalability and performance.",
+    tech: ["React", "CSS Modules", "Netlify Sevrerless"],
+    link: "https://deploy-preview-103--smart-cv-migracode.netlify.app/",
+    github: "https://github.com/SyedArslanHaider/smart-cv-builder/",
     images: [
-      "/images/portfolio1.png",
-      "/images/portfolio2.png",
-      "/images/portfolio3.png",
+      "https://github.com/SyedArslanHaider/smart-cv-builder/blob/main/src/assets/images/LandingPage.png?raw=true",
+      "https://github.com/SyedArslanHaider/smart-cv-builder/blob/main/src/assets/images/PersonalInfo.png?raw=true",
+      "https://github.com/SyedArslanHaider/smart-cv-builder/blob/main/src/assets/images/CvPreview1.png?raw=true",
     ],
   },
   {
-    title: "E-commerce Store",
+    title: "Weather App",
     description:
-      "An online store with a dynamic shopping cart and checkout system.",
-    tech: ["React", "Node.js", "MongoDB"],
-    link: "#",
-    github: "https://github.com/priscilla/ecommerce-store",
+      "A responsive weather application that fetches and displays real-time weather data using a third-party Weather API. Built with React and styled using CSS Modules, the app leverages Vercel serverless functions for efficient API handling and seamless deployment.",
+    tech: ["React", "CSS Modules", "Weather API", "Vercel Serverless"],
+    link: "https://weather-app-by-pris.vercel.app/",
+    github: "https://github.com/Priscilla-MacGatus/WEATHER-APP",
     images: [
-      "/images/ecommerce1.png",
-      "/images/ecommerce2.png",
-      "/images/ecommerce3.png",
+      "/photos/weather1.png",
+      "/photos/weather2.png",
+      "/photos/weather3.png",
+    ],
+  },
+
+  {
+    title: "Calculator App",
+    description:
+      "AA user-friendly, responsive web application designed to perform basic arithmetic calculations (addition, subtraction, multiplication, division) efficiently across all devices. The app features an intuitive interface with clear buttons and input fields that adapt seamlessly to different screen sizes ",
+    tech: ["React", "CSS Modules", "Vercel "],
+    link: "https://calcbypriscilla.vercel.app/",
+    github: "https://github.com/Priscilla-MacGatus/Calculator",
+    images: ["/photos/calc1.png", "/photos/calc2.png", "/photos/calc1.png"],
+  },
+  {
+    title: "Dockify",
+    description:
+      "A responsive weather application that fetches and displays real-time weather data using a third-party Weather API. Built with React and styled using CSS Modules, the app leverages Vercel serverless functions for efficient API handling and seamless deployment.",
+    tech: ["React", "CSS Modules", "Netlify "],
+    link: "https://dockifybypriscilla.netlify.app/",
+    github: "https://github.com/Priscilla-MacGatus/Dockify",
+    images: [
+      "/photos/dockify1.png",
+      "/photos/dockify2.png",
+      "/photos/dockify3.png",
+    ],
+  },
+
+  {
+    title: "CurrenSync",
+    description:
+      "A modern, reliable currency converter that provides real-time exchange rates with an intuitive interface. Seamlessly convert between multiple currencies for travel, business, or personal finance.",
+    tech: ["React", "CSS Modules", "Exhangerate API", "Vercel Serverless"],
+    link: "https://currensyncbycilla.vercel.app/",
+    github: "https://github.com/Priscilla-MacGatus/CurrenSync",
+    images: [
+      "/photos/currensync1.png",
+      "/photos/currensync1.png",
+      "/photos/currensync1.png",
+    ],
+  },
+
+  {
+    title: "RubyCycle",
+    description:
+      "RubyCycle is a menstrual cycle tracking app that allows users to log their periods, visualize cycle phases, and predict upcoming dates with an intuitive calendar and circular phase tracker.",
+    tech: ["React", "CSS Modules", "Vercel Serverless"],
+    link: "https://rubycycle.vercel.app/",
+    github: "https://github.com/Priscilla-MacGatus/RubyCycle",
+    images: ["/photos/ruby1.png", "/photos/ruby1.png", "/photos/ruby1.png"],
+  },
+
+  {
+    title: "FlipCardMaster",
+    description:
+      " Flip Card Master is a simple and engaging memory game built with React. Test your memory, sharpen your concentration, and have fun flipping cards to find all the matching pairs!",
+    tech: ["React", "CSS Modules", "Vercel Serverless"],
+    link: "https://flipcardsbycilla.vercel.app/",
+    github: "https://github.com/Priscilla-MacGatus/FlipCard-Master",
+    images: [
+      "/photos/flipmaster1.png",
+      "/photos/flipmaster4.png",
+      "/photos/flipmaster1.png",
     ],
   },
 ];
@@ -39,7 +100,6 @@ const Projects = () => {
     AOS.init({ duration: 1000, once: true });
   }, []);
 
-  // Automatic slide every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImages((prev) =>

@@ -14,6 +14,24 @@
   z-index: 1;
 }
 
+.logo img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
 .logo h1 {
   font-size: 9rem;
   font-family: "Playfair Display", serif;
@@ -43,14 +61,20 @@
   }
 
   .logo h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     line-height: 1.2;
   }
 
   .logo p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 1.4;
     padding: 0 10px;
+  }
+
+  .logo img {
+    width: 110px;
+    height: 120px;
+    margin-bottom: 1.5rem;
   }
 }
 
