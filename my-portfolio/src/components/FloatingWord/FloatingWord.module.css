@@ -1,0 +1,24 @@
+@keyframes floatRandom {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(-10px, -50px) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(10px, 0px) rotate(360deg);
+    opacity: 0.8;
+  }
+}
+
+.word {
+  position: absolute;
+  font-size: 4rem;
+  color: #444;
+  animation-name: floatRandom;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  pointer-events: none;
+}

@@ -1,0 +1,91 @@
+nav {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 0.9rem;
+  z-index: 10;
+}
+
+.left a,
+.right a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #2e2b2b;
+  font-size: large;
+  font-weight: 500;
+}
+
+.left a:last-child,
+.right a:last-child {
+  margin-right: 0;
+}
+
+.waveText {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: #1a1a1a;
+  text-decoration: none;
+  display: inline-block;
+  animation: waveShadow 3s ease-in-out infinite;
+}
+
+/* Animate text shadow only, no transform */
+@keyframes waveShadow {
+  0% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4),
+      -2px -2px 4px rgba(0, 0, 0, 0.3);
+  }
+  25% {
+    text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.4),
+      2px -2px 4px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    text-shadow: 2px -2px 4px rgba(0, 0, 0, 0.4),
+      -2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  75% {
+    text-shadow: -2px -2px 4px rgba(0, 0, 0, 0.4),
+      2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  100% {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4),
+      -2px -2px 4px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.waveText:hover {
+  color: #687019;
+}
+
+@media (max-width: 768px) {
+  .waveText {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .left,
+  .right {
+    margin: 10px 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .left a,
+  .right a {
+    margin-right: 0;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,107 @@
+.projects {
+  padding: 40px 20px;
+  height: 100vh;
+  background-color: #f4a300; 
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #f76c6c;
+}
+
+.grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project {
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  color: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.navButton {
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navButton:first-of-type {
+  left: 5px;
+}
+
+.navButton:last-of-type {
+  right: 5px;
+}
+
+.projectTitle {
+  font-size: 1.3rem;
+  margin: 15px 0 10px;
+}
+
+.description {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.techBadge {
+  background: #f76c6c;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.links a {
+  color: #f76c6c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}

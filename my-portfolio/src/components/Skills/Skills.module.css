@@ -1,0 +1,106 @@
+.skills {
+  padding: 40px 20px;
+  background-color: #f4a300;
+  color: #1a1a1a;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.skillsAndGraph {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.softSkills {
+  width: 48%;
+  text-align: left;
+  display: flex;
+  gap: 50px;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.skillsGroup {
+  margin-bottom: 40px;
+}
+
+.groupTitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.softSkillsList {
+  list-style: none;
+  padding: 0;
+}
+
+.softSkillsList li {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.graphContainer {
+  width: 48%;
+}
+
+.downloadCV {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .skillsAndGraph {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .softSkills {
+    width: 100%;
+    text-align: center;
+  }
+
+  .graphContainer {
+    width: 100%;
+  }
+
+  .downloadCV {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+}

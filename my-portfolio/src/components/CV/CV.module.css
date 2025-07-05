@@ -1,0 +1,27 @@
+.cv {
+  height: 100vh;
+  background-color: #f4a300; /* mustard yellow */
+}
+
+.cv p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.cvLink {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  background-color: #0077b6;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cvLink:hover {
+  background-color: #005f8c;
+}
+.cvLink:visited {
+  color: #e0f7fa;
+}

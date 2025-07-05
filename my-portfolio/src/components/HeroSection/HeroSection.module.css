@@ -1,0 +1,78 @@
+.hero {
+  height: 100vh;
+  background-color: #f4a300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo {
+  position: relative;
+  z-index: 1;
+}
+
+.logo h1 {
+  font-size: 9rem;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  margin: 0;
+  color: #1a1a1a;
+  position: relative;
+  animation: waveText 3s ease-in-out infinite;
+  z-index: 2;
+}
+
+.logo p {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  margin: 0;
+  color: #1a1a1a;
+  position: relative;
+  animation: waveText 3s ease-in-out infinite;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .logo h1 {
+    font-size: 5rem;
+    line-height: 1.2;
+  }
+
+  .logo p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+}
+
+@keyframes waveText {
+  0% {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.3),
+      0 0 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+  }
+  50% {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.3),
+      0 0 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.3),
+      0 0 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+  }
+}
+
+.floating-word {
+  position: absolute;
+  z-index: 0;
+}
