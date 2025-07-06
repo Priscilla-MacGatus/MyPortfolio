@@ -8,7 +8,7 @@
   text-align: center;
   font-size: 2rem;
   margin-bottom: 30px;
-  color: #333;
+  color: #000000;
 }
 
 .grid {
@@ -18,7 +18,7 @@
 }
 
 .project {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0, 0, 0, 0.4);
   border-radius: 8px;
   overflow: hidden;
   padding: 20px;
@@ -79,8 +79,8 @@
 }
 
 .techBadge {
-  background: rgba(124, 126, 112, 0.7);
-  color: rgb(0, 0, 0);
+  background: rgba(47, 48, 44, 0.7);
+  color: rgb(255, 255, 255);
   padding: 4px 8px;
   border-radius: 4px;
   font-size: 0.8rem;
