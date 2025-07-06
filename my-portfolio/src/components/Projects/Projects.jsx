@@ -11,11 +11,7 @@ const projects = [
     tech: ["React", "CSS Modules", "Netlify Sevrerless"],
     link: "https://deploy-preview-103--smart-cv-migracode.netlify.app/",
     github: "https://github.com/SyedArslanHaider/smart-cv-builder/",
-    images: [
-      "https://github.com/SyedArslanHaider/smart-cv-builder/blob/main/src/assets/images/LandingPage.png?raw=true",
-      "https://github.com/SyedArslanHaider/smart-cv-builder/blob/main/src/assets/images/PersonalInfo.png?raw=true",
-      "https://github.com/SyedArslanHaider/smart-cv-builder/blob/main/src/assets/images/CvPreview1.png?raw=true",
-    ],
+    images: ["/photos/smc1.png", "/photos/smc2.png", "/photos/smc3.png"],
   },
   {
     title: "Weather App",
@@ -34,7 +30,7 @@ const projects = [
   {
     title: "Calculator App",
     description:
-      "AA user-friendly, responsive web application designed to perform basic arithmetic calculations (addition, subtraction, multiplication, division) efficiently across all devices. The app features an intuitive interface with clear buttons and input fields that adapt seamlessly to different screen sizes ",
+      "A user-friendly, responsive web application designed to perform basic arithmetic calculations (addition, subtraction, multiplication, division) efficiently across all devices. The app features an intuitive interface with clear buttons and input fields that adapt seamlessly to different screen sizes ",
     tech: ["React", "CSS Modules", "Vercel "],
     link: "https://calcbypriscilla.vercel.app/",
     github: "https://github.com/Priscilla-MacGatus/Calculator",
@@ -43,7 +39,7 @@ const projects = [
   {
     title: "Dockify",
     description:
-      "A responsive weather application that fetches and displays real-time weather data using a third-party Weather API. Built with React and styled using CSS Modules, the app leverages Vercel serverless functions for efficient API handling and seamless deployment.",
+      "Designed with a sleek macOS inspired interface, Dockify hosts and showcases the small but meaningful projects I have built. With its clean layout, dock style navigation, and windowed project views, it recreates the look and feel of a MacBook desktop, turning a simple portfolio into an interactive and immersive experience.",
     tech: ["React", "CSS Modules", "Netlify "],
     link: "https://dockifybypriscilla.netlify.app/",
     github: "https://github.com/Priscilla-MacGatus/Dockify",

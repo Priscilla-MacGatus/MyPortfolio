@@ -1,12 +1,13 @@
 .hero {
   height: 100vh;
-  background-color: #f4a300;
+  background-color: #ffb343;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
   overflow: hidden;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .logo {
@@ -19,7 +20,7 @@
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
   margin-bottom: 2rem;
   display: block;
   margin-left: auto;
@@ -34,7 +35,6 @@
 
 .logo h1 {
   font-size: 9rem;
-  font-family: "Playfair Display", serif;
   letter-spacing: 2px;
   margin: 0;
   color: #1a1a1a;
@@ -45,7 +45,6 @@
 
 .logo p {
   font-size: 2rem;
-  font-family: "Playfair Display", serif;
   letter-spacing: 2px;
   margin: 0;
   color: #1a1a1a;
@@ -61,12 +60,12 @@
   }
 
   .logo h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.2;
   }
 
   .logo p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.4;
     padding: 0 10px;
   }
@@ -80,23 +79,15 @@
 
 @keyframes waveText {
   0% {
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.3),
-      0 0 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 0 0 10px rgba(0, 0, 0, 0.1);
     transform: translateY(0);
   }
   50% {
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.3),
-      0 0 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.15), 0 0 10px rgba(0, 0, 0, 0.1);
     transform: translateY(-10px);
   }
   100% {
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.3),
-      0 0 15px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.05), 0 0 10px rgba(0, 0, 0, 0.1);
     transform: translateY(0);
   }
-}
-
-.floating-word {
-  position: absolute;
-  z-index: 0;
 }
